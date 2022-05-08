@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript" src="player.js"></script>
+<link rel="stylesheet" type="text/css" href="player.css">
+</head>
+<body>
+    
+    <h2 id="waiting_for_start">Loading</h2>
+    
+    
+<div id="wrapper">
+ <div id='player_wrapper'>
+  <video id='video_player'>
+   <source src='images/sample.webm' type='video/webm'>
+  </video>
+  <div id='player_controls'>
+    <button id='fullscreen_button' onclick="fullscreen()">Fullscreen</button>
+   <img src="images/volume.png" id="vol_img">
+   <input type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
+  </div>
+ </div>
+</div>
+<source src='images/sample.mp4' type='video/mp4'>
+</body>
+</html>
