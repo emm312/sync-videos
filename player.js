@@ -61,7 +61,7 @@ function sync() {
         let hours = Math.floor(time / (1000 * 60 * 60));
         let minutes = Math.floor(time / 60000);
         let seconds = Math.floor((time % 60000) / 1000);
-        timeStart.innerHTML = hours+ " hours "+ minutes + " minutes and " + seconds + " seconds until the movie starts!";
+        timeStart.innerHTML = hours + " hours "+ minutes + " minutes and " + seconds + " seconds until the movie starts!";
     }
 }
 
