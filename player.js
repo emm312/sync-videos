@@ -31,7 +31,7 @@ function fullscreen() {
 }
 
 function sync() {
-    let start = 1651975027000;
+    let start = 1651983411000;
     // change the timestart element based on how long until it starts
     
     if (new Date().getTime()>= start) {
