@@ -1,25 +1,35 @@
-<html>
-<head>
-<script type="text/javascript" src="player.js"></script>
-<link rel="stylesheet" type="text/css" href="player.css">
-</head>
-<body>
-    
-    <h2 id="waiting_for_start">Loading</h2>
-    
-    
-<div id="wrapper">
- <div id='player_wrapper'>
-  <video id='video_player'>
-   <source src='images/sample.webm' type='video/webm'>
-  </video>
-  <div id='player_controls'>
-    <button id='fullscreen_button' onclick="fullscreen()">Fullscreen</button>
-   <img src="images/volume.png" id="vol_img">
-   <input type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1">
-  </div>
- </div>
-</div>
-<source src='images/sample.mp4' type='video/mp4'>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="player.css">
+    </head>
+    <body>
+        <div class="main" id="main">
+            <h1 id="welkom">Welcome!</h1>
+            <div id="waiting_for_start" class="container">
+                Loading timer..
+            </div>
+            <div id="player" style="display: none; text-align: center">
+                <video class="container" id="video-player" height=70%>
+                    <source src='images/sample.mp4'>
+                    Your browser does not support the <b>video</b> tag.
+                </video>
+                <br><br>
+                <div class="container" style="font-size: 20px;">
+                    <button id='fullscreen_button' onclick="fullscreen()">Fullscreen</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id='toggle_mute_button' onclick="toggle_mute()">Mute</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Volume</b>:
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="range" id="volume_range" onchange="change_vol()" class="slider" value="100">
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="footer">
+            Made by <b>emm312</b><br>
+            Stylized by <b>NotAlternate</b>
+        </footer>
+    </body>
 </html>
